@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/b2"
+    android:layout_height="match_parent"
+   >
+
+    <FrameLayout
+        android:id="@+id/scroll_view_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <LinearLayout
+            tools:context="com.example.hhharsh.near.MainActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linear_layout_id"
+            android:orientation="vertical"
+
+
+            >
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:paddingRight="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="10dp"
+                >
+
+
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:ems="10"
+                    android:hint="I'm Looking For..."
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Search"
+                    android:onClick="Search2"
+                    android:background="@drawable/button"
+                   />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/candal"
+                android:text="Suggestions..."
+                android:textColor="#d47800"
+                android:textSize="30dp" />
+
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+              >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageButton
+
+                        android:id="@+id/im1_id"
+                        android:layout_width="100dip"
+                        android:layout_height="100dip"
+                        android:background="@drawable/unnamed"
+                        android:layout_margin="15dp"/>
+
+                    <ImageButton
+                        android:id="@+id/im2_id"
+                        android:layout_width="100dip"
+                        android:layout_height="100dip"
+                        android:background="@drawable/ff3a6"
+                        android:layout_margin="15dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   >
+
+                    <ImageButton
+                        android:id="@+id/im3_id"
+                        android:layout_width="100dip"
+                        android:layout_height="100dip"
+                        android:background="@drawable/icon"
+                        android:layout_margin="15dp"/>
+
+                    <ImageButton
+                        android:id="@+id/im4_id"
+                        android:layout_width="100dip"
+                        android:layout_height="100dip"
+                        android:background="@drawable/hotel"
+                        android:layout_margin="15dp"/>
+                </TableRow>
+
+
+
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:fontFamily="@font/baumans"
+                    android:text="Your Current Location"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loc"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textSize="25dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="100dp"
+                android:paddingStart="100dp"
+                android:paddingRight="75dp"
+                android:paddingEnd="75dp">
+
+
+                <TextView
+                    android:id="@+id/empty_state2"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    tools:text="No Internet Connectoin" />
+
+               <!-- <Button
+                    android:id="@+id/button2"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+
+                    android:text="Button" />-->
+
+                <ImageButton
+                    android:id="@+id/reload_id"
+                    android:layout_width="26dip"
+                    android:layout_height="26dip"
+                    app:srcCompat="@drawable/reload"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:background="#ab642f"/>
+
+
+            </LinearLayout>
+
+
+
+            <ProgressBar
+                android:id="@+id/loading_spinner2"
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+    </FrameLayout>
+
+
+
+</ScrollView>
+
+
